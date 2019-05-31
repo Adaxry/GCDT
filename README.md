@@ -54,12 +54,8 @@ Please cite the following paper if you use the code:
 
   For training efficiency, we firstly train a model for specified steps, and restore checkpoints for evaluation and testing.   Finally, we report the result on the test set at the best-performing checkpoints on the evaluation set.
 
-+ How to add BERT embedding?
++ How to get BERT embeddings?
 
   Since the WordPiece adopted in [BERT](https://github.com/google-research/bert#using-bert-to-extract-fixed-feature-vectors-like-elmo) may cut a word into pieces, we investigate three strategies (`first`, `mean` and `max`) to maintain alignments between input tokens and their corresponding labels. We provide a simple [tools](undone) to gennerate the BERT embedding with specified layer and aggregation strategy.
-
-
-
-
 
 
