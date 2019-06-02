@@ -28,6 +28,7 @@ sh test.sh task_name test_type
 ```
 
 `task_name` is same as above, and `test_type` indicates `testa` or `testb`.		
+Notice to choose `testa` for evaluation before the `testb` set.
 
 
 ## Requirements
