@@ -57,6 +57,6 @@ Please cite the following paper if you use the code:
 
 + How to get BERT embeddings?
 
-  Since the WordPiece adopted in [BERT](https://github.com/google-research/bert#using-bert-to-extract-fixed-feature-vectors-like-elmo) may cut a word into pieces, we investigate three strategies (`first`, `mean` and `max`) to maintain alignments between input tokens and their corresponding labels. We provide a simple [tools](undone) to gennerate the BERT embedding with specified layer and aggregation strategy.
+  Since the WordPiece adopted in [BERT](https://github.com/google-research/bert#using-bert-to-extract-fixed-feature-vectors-like-elmo) may cut a word into pieces, we investigate three strategies (`first`, `mean` and `max`) to maintain alignments between input tokens and their corresponding labels. We provide a simple [tools](https://github.com/Adaxry/get_aligned_BERT_emb) to gennerate the BERT embedding with specified layer and align strategy.
 
 
