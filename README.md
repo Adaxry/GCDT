@@ -57,6 +57,6 @@ Please cite the following paper if you use the code:
 
 + How to get BERT embeddings?
 
-We provide a simple [tool](https://github.com/Adaxry/get_aligned_BERT_emb) to gennerate the BERT embedding for sequence labeling tasks. And then assign `bert_emb_path` with correct path and set `use_bert` to True in both `train.sh` and `test.sh`.
+  We provide a simple [tool](https://github.com/Adaxry/get_aligned_BERT_emb) to gennerate the BERT embedding for sequence labeling tasks. And then assign `bert_emb_path` with correct path and set `use_bert` to True in `train.sh`.
 
 
