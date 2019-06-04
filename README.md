@@ -24,10 +24,11 @@ sh train.sh task_name
 + Evaluation and Testing
 
 ```
-sh test.sh task_name
+sh test.sh task_name test_type
 ```
 
-`task_name` is same as above.
+Set `test_type` to `testa` for evaluation and `testb` for testing.
+Please note there is no evaluation set for the `chunking` task.
 
 
 ## Requirements
