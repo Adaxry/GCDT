@@ -24,11 +24,10 @@ sh train.sh task_name
 + Evaluation and Testing
 
 ```
-sh test.sh task_name test_type
+sh test.sh task_name
 ```
 
-`task_name` is same as above, and `test_type` indicates `testa` or `testb`.		
-Notice to choose `testa` for evaluation before the `testb` set.
+`task_name` is same as above.
 
 
 ## Requirements
@@ -53,7 +52,7 @@ Please cite the following paper if you use the code:
 
 + Why not evaluate along with training?
 
-  For training efficiency, we firstly train a model for specified steps, and restore checkpoints for evaluation and testing.   Finally, we report the result on the test set at the best-performing checkpoints on the evaluation set.
+  For training efficiency, we firstly train a model for specified steps, and restore checkpoints for evaluation and testing.   For the CoNLL03, we compute the score on the test set at the best-performing checkpoints on the evaluation set. For the CoNLL2000, we compute the score on the test set directly.
 
 + How to get BERT embeddings?
 
