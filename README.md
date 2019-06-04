@@ -13,6 +13,13 @@ The code of our proposed GCDT, which deepens the state transition path at each p
 
 ## Usage
 
++ Trim Glove
+
+```
+sh trim_glove.sh path_to_glove
+```
+`path_to_glove` is the path of your decompressed [Glove](http://nlp.stanford.edu/data/glove.840B.300d.zip) embedding.
+
 + Training
 
 ```
