@@ -3,7 +3,7 @@ import codecs
 
 with codecs.open(sys.argv[1], "r", encoding="utf-8") as emb_f, \
      codecs.open(sys.argv[2], "r", encoding="utf-8") as vocab_f, \
-     codecs.open(sys.argv[3], "w", encoding="utf-8") as glove_f:
+     codecs.open(sys.argv[3], "a", encoding="utf-8") as glove_f:
 
     vocab = set([word.strip() for word in vocab_f])
     done_set = set()
