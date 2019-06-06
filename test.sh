@@ -9,11 +9,15 @@ elif [ "$task_name" != "ner" ]; then
    exit 1
 fi
 
-work_dir=$(realpath "$0" | sed 's|\(.*\)/.*|\1|')
+work_dir=$PWD
 code_dir=$work_dir/thumt
 data_dir=$work_dir/data/$dataset
-
 result_dir=$work_dir/results/$task_name
+
+if [ ! -d $work_dir/results ]; then
+    mkdir $work_dir/results
+fi
+
 if [ ! -d $result_dir ]; then
     mkdir $result_dir
 fi
