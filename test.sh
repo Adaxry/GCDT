@@ -9,6 +9,11 @@ elif [ "$task_name" != "ner" ]; then
    exit 1
 fi
 
+if [ "$test_type" != "testa" ] && [ "$test_type" != "testb" ]; then
+    echo "wrong test name of $test_type, choose between [testa|testb]"
+    exit 2
+fi
+
 work_dir=$PWD
 code_dir=$work_dir/thumt
 data_dir=$work_dir/data/$dataset
