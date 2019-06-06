@@ -8,9 +8,13 @@ elif [ "$task_name" != "ner" ]; then
    exit 1
 fi
 
-work_dir=$(realpath "$0" | sed 's|\(.*\)/.*|\1|')
+work_dir=$PWD
 data_dir=$work_dir/data/$dataset
 output_dir=$work_dir/checkpoints/$task_name
+
+if [ ! -d $work_dir/checkpoints ]; then
+    mkdir $work_dir/checkpoints
+fi
 
 if [ ! -d $output_dir ]; then
     mkdir $output_dir
@@ -19,7 +23,8 @@ fi
 export PYTHONPATH=$work_dir:$PYTHONPATH
 python $work_dir/thumt/bin/trainer.py \
   --model rnnsearch \
-  --glove_emb_path=$data_dir/eng.glove \
+  --glove_emb_path $data_dir/eng.glove \
+  --bert_emb_path None \
   --input $data_dir/eng.train.src $data_dir/eng.train.trg \
   --output $output_dir \
   --vocabulary $data_dir/vocab.w $data_dir/vocab.t $data_dir/vocab.c \
