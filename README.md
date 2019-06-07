@@ -9,7 +9,7 @@
 
 ## Introduction
 
-The code of our proposed GCDT, which deepens the state transition path at each position in a sentence, and further assign every token with a global representation learned from the entire sentence. \[[paper](https://arxiv.org/abs/undone)\]. The implementation is based on [THUMT](https://github.com/thumt/THUMT).
+The code of our proposed GCDT, which deepens the state transition path at each position in a sentence, and further assign every token with a global representation learned from the entire sentence. \[[paper](https://arxiv.org/pdf/1906.02437.pdf)\]. The implementation is based on [THUMT](https://github.com/thumt/THUMT).
 
 ## Usage
 
