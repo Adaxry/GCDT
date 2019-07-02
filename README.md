@@ -40,7 +40,7 @@ Please note there is no evaluation set for the `chunking` task.
 
 ## Requirements
 
-+ tensorflow 1.2 
++ tensorflow 1.12 
 + python 3.5 
 
 ## Citation
